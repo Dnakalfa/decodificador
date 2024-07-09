@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de Textos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main class="codificar_historico">
+        <div class="texto_entrada">
+            <h1>Codificador de Textos</h1>
+            <textarea id="textoDeEntrada" placeholder="Digite seu texto aqui..."></textarea>
+            <img class="icone_exclamar" src="assets/Exclamation.webp" alt="exclamação">
+            <div class="observacao">Apenas letras minúsculas e sem acento.</div>
+            <div class="buttons">
+                <button onclick="codificar()">Codificar</button>
+                <button onclick="decodificar()">Decodificar</button>
+            </div>
+        </div>
+        <div class="historico">
+            <h2>Histórico</h2>
+            <ul id="listaHistorico"></ul>
+            <img class="buscador" src="assets/busca.svg" alt="imagem de busca">
+            <button onclick="limparHistorico()">Limpar Histórico</button>
+        </div>
+    </main>
+    <footer class="rodape">Desenvolvido por Umberto Alves</footer>
+    <script src="scripts/decoder.js"></script>
+</body>
+</html>
+
+
+
+
+
